@@ -43,6 +43,19 @@ function sortearFrases(db) {
     document.getElementById("type").textContent = tipo2;
 }
 
+// Função para resetar o campo e sortear uma nova frase
+function resetarCampo() {
+    document.getElementById("user-input").value = ""; // Limpa o campo
+    document.getElementById("user-input").readOnly = false; // Libera o campo para edição
+    document.getElementById("submit-btn").textContent = "Enviar Resposta"; // Volta o texto do botão
+    document.getElementById("result").textContent = ""; // Limpa a mensagem de resultado
+    document.getElementById("user-input").style.backgroundColor = "white";
+
+    submitBtn.removeEventListener("click", resetarCampo);
+    submitBtn.addEventListener("click", handleSubmit);
+    iniciarSistema(); // Sorteia uma nova frase
+}
+
 // Função principal para iniciar o sistema
 async function iniciarSistema() {
     const database = await carregarBancoDeDados("../db.json"); // Caminho do JSON
@@ -53,8 +66,8 @@ async function iniciarSistema() {
     }
 }
 
-// Evento para verificar a resposta do usuário
-document.getElementById("submit-btn").addEventListener("click", () => {
+// Função para lidar com o envio da resposta
+function handleSubmit() {
     const userInput = document.getElementById("user-input").value.trim();
     const resultDiv = document.getElementById("result");
 
@@ -66,12 +79,21 @@ document.getElementById("submit-btn").addEventListener("click", () => {
         resultDiv.style.color = "red";
     }
 
-    // Limpa o campo de entrada
-    document.getElementById("user-input").value = "";
+    // Bloqueia o campo de texto para leitura
+    document.getElementById("user-input").readOnly = true;
+    document.getElementById("user-input").style.backgroundColor = "gray";
 
-    // Sorteia novas frases
-    iniciarSistema();
-});
+    // Altera o texto do botão para "Nova Frase"
+    document.getElementById("submit-btn").textContent = "Nova Frase";
+
+    // Remove o evento de envio e adiciona o evento de reset
+    submitBtn.removeEventListener("click", handleSubmit);
+    submitBtn.addEventListener("click", resetarCampo);
+}
+
+// Adiciona o evento de clique ao botão
+const submitBtn = document.getElementById("submit-btn");
+submitBtn.addEventListener("click", handleSubmit);
 
 // Inicia o sistema ao carregar a página
 iniciarSistema();
