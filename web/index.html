@@ -9,17 +9,48 @@
 </head>
 
 <body>
-    <h1>Practice Your English!</h1>
-    <p><strong>Frase:</strong>
-        <span id="shown-phrase"></span>
-    </p>
-    <p><strong>Desafio:</strong> Escreva a frase no tempo "<span id="tense"></span>" e no tipo "<span
-            id="type"></span>".
-    </p>
-    <input type="text" id="user-input" placeholder="Digite sua frase aqui...">
-    <br>
-    <button id="submit-btn">Enviar Resposta</button>
-    <div class="result" id="result"></div>
+    <!-- Menu inicial -->
+    <div id="menu">
+        <h1>Welcome to English Practice!</h1>
+        <p>Choose a level to start practicing your English skills:</p>
+        <div id="levels">
+            <!-- Card para o nível Beginner -->
+            <div class="level-card">
+                <h2>Beginner</h2>
+                <p>Focus on basic verb tenses (past simple, present simple, future simple) and short, straightforward
+                    sentences with common, everyday vocabulary.</p>
+                <button class="level-btn" data-level="1">Start Beginner</button>
+            </div>
+
+            <!-- Card para o nível Intermediate -->
+            <div class="level-card">
+                <h2>Intermediate</h2>
+                <p>Combination of simple and contextualized structures, focusing on everyday situations and the use of
+                    verb tenses like past simple, present continuous, and future simple.</p>
+                <button class="level-btn" data-level="2">Start Intermediate</button>
+            </div>
+
+            <!-- Card para o nível Advanced -->
+            <div class="level-card">
+                <h2>Advanced</h2>
+                <p>Use of complex verb tenses (past perfect, future perfect) and elaborate structures, with longer
+                    sentences and more challenging vocabulary.</p>
+                <button class="level-btn" data-level="3">Start Advanced</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo do jogo (inicialmente oculto) -->
+    <div id="game" style="display: none;">
+        <h1>Practice Your English!</h1>
+        <p><strong>Phrase:</strong> <span id="shown-phrase"></span></p>
+        <p><strong>Challenge:</strong> Write the sentence in the "<span id="tense"></span>" tense and in the "<span
+                id="type"></span>" form.</p>
+        <input type="text" id="user-input" placeholder="Type your sentence here...">
+        <br>
+        <button id="submit-btn">Submit Answer</button>
+        <div class="result" id="result"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

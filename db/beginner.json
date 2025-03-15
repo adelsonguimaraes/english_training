@@ -1,0 +1,342 @@
+[
+    {
+        "past": {
+            "question": "Did they cook dinner?",
+            "affirmative": "They cooked dinner.",
+            "negative": "They did not cook dinner."
+        },
+        "present": {
+            "question": "Do they cook dinner?",
+            "affirmative": "They cook dinner.",
+            "negative": "They do not cook dinner."
+        },
+        "future": {
+            "question": "Will they cook dinner?",
+            "affirmative": "They will cook dinner.",
+            "negative": "They will not cook dinner."
+        }
+    },
+    {
+        "past": {
+            "question": "Did she write a letter?",
+            "affirmative": "She wrote a letter.",
+            "negative": "She did not write a letter."
+        },
+        "present": {
+            "question": "Does she write a letter?",
+            "affirmative": "She writes a letter.",
+            "negative": "She does not write a letter."
+        },
+        "future": {
+            "question": "Will she write a letter?",
+            "affirmative": "She will write a letter.",
+            "negative": "She will not write a letter."
+        }
+    },
+    {
+        "past": {
+            "question": "Did he watch the movie?",
+            "affirmative": "He watched the movie.",
+            "negative": "He did not watch the movie."
+        },
+        "present": {
+            "question": "Does he watch the movie?",
+            "affirmative": "He watches the movie.",
+            "negative": "He does not watch the movie."
+        },
+        "future": {
+            "question": "Will he watch the movie?",
+            "affirmative": "He will watch the movie.",
+            "negative": "He will not watch the movie."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they travel to Paris?",
+            "affirmative": "They traveled to Paris.",
+            "negative": "They did not travel to Paris."
+        },
+        "present": {
+            "question": "Do they travel to Paris?",
+            "affirmative": "They travel to Paris.",
+            "negative": "They do not travel to Paris."
+        },
+        "future": {
+            "question": "Will they travel to Paris?",
+            "affirmative": "They will travel to Paris.",
+            "negative": "They will not travel to Paris."
+        }
+    },
+    {
+        "past": {
+            "question": "Did she study for the exam?",
+            "affirmative": "She studied for the exam.",
+            "negative": "She did not study for the exam."
+        },
+        "present": {
+            "question": "Does she study for the exam?",
+            "affirmative": "She studies for the exam.",
+            "negative": "She does not study for the exam."
+        },
+        "future": {
+            "question": "Will she study for the exam?",
+            "affirmative": "She will study for the exam.",
+            "negative": "She will not study for the exam."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they build a house?",
+            "affirmative": "They built a house.",
+            "negative": "They did not build a house."
+        },
+        "present": {
+            "question": "Do they build a house?",
+            "affirmative": "They build a house.",
+            "negative": "They do not build a house."
+        },
+        "future": {
+            "question": "Will they build a house?",
+            "affirmative": "They will build a house.",
+            "negative": "They will not build a house."
+        }
+    },
+    {
+        "past": {
+            "question": "Did he fix the car?",
+            "affirmative": "He fixed the car.",
+            "negative": "He did not fix the car."
+        },
+        "present": {
+            "question": "Does he fix the car?",
+            "affirmative": "He fixes the car.",
+            "negative": "He does not fix the car."
+        },
+        "future": {
+            "question": "Will he fix the car?",
+            "affirmative": "He will fix the car.",
+            "negative": "He will not fix the car."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they visit the museum?",
+            "affirmative": "They visited the museum.",
+            "negative": "They did not visit the museum."
+        },
+        "present": {
+            "question": "Do they visit the museum?",
+            "affirmative": "They visit the museum.",
+            "negative": "They do not visit the museum."
+        },
+        "future": {
+            "question": "Will they visit the museum?",
+            "affirmative": "They will visit the museum.",
+            "negative": "They will not visit the museum."
+        }
+    },
+    {
+        "past": {
+            "question": "Did she bake a cake?",
+            "affirmative": "She baked a cake.",
+            "negative": "She did not bake a cake."
+        },
+        "present": {
+            "question": "Does she bake a cake?",
+            "affirmative": "She bakes a cake.",
+            "negative": "She does not bake a cake."
+        },
+        "future": {
+            "question": "Will she bake a cake?",
+            "affirmative": "She will bake a cake.",
+            "negative": "She will not bake a cake."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they clean the house?",
+            "affirmative": "They cleaned the house.",
+            "negative": "They did not clean the house."
+        },
+        "present": {
+            "question": "Do they clean the house?",
+            "affirmative": "They clean the house.",
+            "negative": "They do not clean the house."
+        },
+        "future": {
+            "question": "Will they clean the house?",
+            "affirmative": "They will clean the house.",
+            "negative": "They will not clean the house."
+        }
+    },
+    {
+        "past": {
+            "question": "Did he read the book?",
+            "affirmative": "He read the book.",
+            "negative": "He did not read the book."
+        },
+        "present": {
+            "question": "Does he read the book?",
+            "affirmative": "He reads the book.",
+            "negative": "He does not read the book."
+        },
+        "future": {
+            "question": "Will he read the book?",
+            "affirmative": "He will read the book.",
+            "negative": "He will not read the book."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they plant trees?",
+            "affirmative": "They planted trees.",
+            "negative": "They did not plant trees."
+        },
+        "present": {
+            "question": "Do they plant trees?",
+            "affirmative": "They plant trees.",
+            "negative": "They do not plant trees."
+        },
+        "future": {
+            "question": "Will they plant trees?",
+            "affirmative": "They will plant trees.",
+            "negative": "They will not plant trees."
+        }
+    },
+    {
+        "past": {
+            "question": "Did she paint the wall?",
+            "affirmative": "She painted the wall.",
+            "negative": "She did not paint the wall."
+        },
+        "present": {
+            "question": "Does she paint the wall?",
+            "affirmative": "She paints the wall.",
+            "negative": "She does not paint the wall."
+        },
+        "future": {
+            "question": "Will she paint the wall?",
+            "affirmative": "She will paint the wall.",
+            "negative": "She will not paint the wall."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they buy a car?",
+            "affirmative": "They bought a car.",
+            "negative": "They did not buy a car."
+        },
+        "present": {
+            "question": "Do they buy a car?",
+            "affirmative": "They buy a car.",
+            "negative": "They do not buy a car."
+        },
+        "future": {
+            "question": "Will they buy a car?",
+            "affirmative": "They will buy a car.",
+            "negative": "They will not buy a car."
+        }
+    },
+    {
+        "past": {
+            "question": "Did he play the guitar?",
+            "affirmative": "He played the guitar.",
+            "negative": "He did not play the guitar."
+        },
+        "present": {
+            "question": "Does he play the guitar?",
+            "affirmative": "He plays the guitar.",
+            "negative": "He does not play the guitar."
+        },
+        "future": {
+            "question": "Will he play the guitar?",
+            "affirmative": "He will play the guitar.",
+            "negative": "He will not play the guitar."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they swim in the pool?",
+            "affirmative": "They swam in the pool.",
+            "negative": "They did not swim in the pool."
+        },
+        "present": {
+            "question": "Do they swim in the pool?",
+            "affirmative": "They swim in the pool.",
+            "negative": "They do not swim in the pool."
+        },
+        "future": {
+            "question": "Will they swim in the pool?",
+            "affirmative": "They will swim in the pool.",
+            "negative": "They will not swim in the pool."
+        }
+    },
+    {
+        "past": {
+            "question": "Did she teach English?",
+            "affirmative": "She taught English.",
+            "negative": "She did not teach English."
+        },
+        "present": {
+            "question": "Does she teach English?",
+            "affirmative": "She teaches English.",
+            "negative": "She does not teach English."
+        },
+        "future": {
+            "question": "Will she teach English?",
+            "affirmative": "She will teach English.",
+            "negative": "She will not teach English."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they run a marathon?",
+            "affirmative": "They ran a marathon.",
+            "negative": "They did not run a marathon."
+        },
+        "present": {
+            "question": "Do they run a marathon?",
+            "affirmative": "They run a marathon.",
+            "negative": "They do not run a marathon."
+        },
+        "future": {
+            "question": "Will they run a marathon?",
+            "affirmative": "They will run a marathon.",
+            "negative": "They will not run a marathon."
+        }
+    },
+    {
+        "past": {
+            "question": "Did he take a photo?",
+            "affirmative": "He took a photo.",
+            "negative": "He did not take a photo."
+        },
+        "present": {
+            "question": "Does he take a photo?",
+            "affirmative": "He takes a photo.",
+            "negative": "He does not take a photo."
+        },
+        "future": {
+            "question": "Will he take a photo?",
+            "affirmative": "He will take a photo.",
+            "negative": "He will not take a photo."
+        }
+    },
+    {
+        "past": {
+            "question": "Did they dance at the party?",
+            "affirmative": "They danced at the party.",
+            "negative": "They did not dance at the party."
+        },
+        "present": {
+            "question": "Do they dance at the party?",
+            "affirmative": "They dance at the party.",
+            "negative": "They do not dance at the party."
+        },
+        "future": {
+            "question": "Will they dance at the party?",
+            "affirmative": "They will dance at the party.",
+            "negative": "They will not dance at the party."
+        }
+    }
+]

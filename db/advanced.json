@@ -1,0 +1,359 @@
+[
+    {
+        "past": {
+            "question": "Had they already finished the project before the deadline?",
+            "affirmative": "They had already finished the project before the deadline.",
+            "negative": "They had not finished the project before the deadline."
+        },
+        "present": {
+            "question": "Have they finished the project yet?",
+            "affirmative": "They have finished the project.",
+            "negative": "They have not finished the project yet."
+        },
+        "future": {
+            "question": "Will they have completed the project by next week?",
+            "affirmative": "They will have completed the project by next week.",
+            "negative": "They will not have completed the project by next week."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she been working there for five years before she resigned?",
+            "affirmative": "She had been working there for five years before she resigned.",
+            "negative": "She had not been working there for five years before she resigned."
+        },
+        "present": {
+            "question": "Has she been working there for five years?",
+            "affirmative": "She has been working there for five years.",
+            "negative": "She has not been working there for five years."
+        },
+        "future": {
+            "question": "Will she have been working there for five years by next month?",
+            "affirmative": "She will have been working there for five years by next month.",
+            "negative": "She will not have been working there for five years by next month."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he ever traveled to Asia before last year?",
+            "affirmative": "He had traveled to Asia before last year.",
+            "negative": "He had never traveled to Asia before last year."
+        },
+        "present": {
+            "question": "Has he ever traveled to Asia?",
+            "affirmative": "He has traveled to Asia.",
+            "negative": "He has never traveled to Asia."
+        },
+        "future": {
+            "question": "Will he have traveled to Asia by the end of this year?",
+            "affirmative": "He will have traveled to Asia by the end of this year.",
+            "negative": "He will not have traveled to Asia by the end of this year."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been discussing the issue for hours before reaching a decision?",
+            "affirmative": "They had been discussing the issue for hours before reaching a decision.",
+            "negative": "They had not been discussing the issue for hours before reaching a decision."
+        },
+        "present": {
+            "question": "Have they been discussing the issue for hours?",
+            "affirmative": "They have been discussing the issue for hours.",
+            "negative": "They have not been discussing the issue for hours."
+        },
+        "future": {
+            "question": "Will they have been discussing the issue for hours by the time the meeting ends?",
+            "affirmative": "They will have been discussing the issue for hours by the time the meeting ends.",
+            "negative": "They will not have been discussing the issue for hours by the time the meeting ends."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she already written the report when the manager asked for it?",
+            "affirmative": "She had already written the report when the manager asked for it.",
+            "negative": "She had not written the report when the manager asked for it."
+        },
+        "present": {
+            "question": "Has she written the report yet?",
+            "affirmative": "She has written the report.",
+            "negative": "She has not written the report yet."
+        },
+        "future": {
+            "question": "Will she have written the report by tomorrow morning?",
+            "affirmative": "She will have written the report by tomorrow morning.",
+            "negative": "She will not have written the report by tomorrow morning."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been planning the event for months before it was canceled?",
+            "affirmative": "They had been planning the event for months before it was canceled.",
+            "negative": "They had not been planning the event for months before it was canceled."
+        },
+        "present": {
+            "question": "Have they been planning the event for months?",
+            "affirmative": "They have been planning the event for months.",
+            "negative": "They have not been planning the event for months."
+        },
+        "future": {
+            "question": "Will they have been planning the event for months by the time it starts?",
+            "affirmative": "They will have been planning the event for months by the time it starts.",
+            "negative": "They will not have been planning the event for months by the time it starts."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he been studying for the exam all night before he fell asleep?",
+            "affirmative": "He had been studying for the exam all night before he fell asleep.",
+            "negative": "He had not been studying for the exam all night before he fell asleep."
+        },
+        "present": {
+            "question": "Has he been studying for the exam all night?",
+            "affirmative": "He has been studying for the exam all night.",
+            "negative": "He has not been studying for the exam all night."
+        },
+        "future": {
+            "question": "Will he have been studying for the exam all night by the time it starts?",
+            "affirmative": "He will have been studying for the exam all night by the time it starts.",
+            "negative": "He will not have been studying for the exam all night by the time it starts."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she ever met him before the conference?",
+            "affirmative": "She had met him before the conference.",
+            "negative": "She had never met him before the conference."
+        },
+        "present": {
+            "question": "Has she ever met him?",
+            "affirmative": "She has met him.",
+            "negative": "She has never met him."
+        },
+        "future": {
+            "question": "Will she have met him by the end of the conference?",
+            "affirmative": "She will have met him by the end of the conference.",
+            "negative": "She will not have met him by the end of the conference."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been waiting for the bus for over an hour before it arrived?",
+            "affirmative": "They had been waiting for the bus for over an hour before it arrived.",
+            "negative": "They had not been waiting for the bus for over an hour before it arrived."
+        },
+        "present": {
+            "question": "Have they been waiting for the bus for over an hour?",
+            "affirmative": "They have been waiting for the bus for over an hour.",
+            "negative": "They have not been waiting for the bus for over an hour."
+        },
+        "future": {
+            "question": "Will they have been waiting for the bus for over an hour by the time it arrives?",
+            "affirmative": "They will have been waiting for the bus for over an hour by the time it arrives.",
+            "negative": "They will not have been waiting for the bus for over an hour by the time it arrives."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he already left the office when the call came?",
+            "affirmative": "He had already left the office when the call came.",
+            "negative": "He had not left the office when the call came."
+        },
+        "present": {
+            "question": "Has he left the office yet?",
+            "affirmative": "He has left the office.",
+            "negative": "He has not left the office yet."
+        },
+        "future": {
+            "question": "Will he have left the office by 6 PM?",
+            "affirmative": "He will have left the office by 6 PM.",
+            "negative": "He will not have left the office by 6 PM."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she been practicing the piano for years before her first concert?",
+            "affirmative": "She had been practicing the piano for years before her first concert.",
+            "negative": "She had not been practicing the piano for years before her first concert."
+        },
+        "present": {
+            "question": "Has she been practicing the piano for years?",
+            "affirmative": "She has been practicing the piano for years.",
+            "negative": "She has not been practicing the piano for years."
+        },
+        "future": {
+            "question": "Will she have been practicing the piano for years by the time of her next concert?",
+            "affirmative": "She will have been practicing the piano for years by the time of her next concert.",
+            "negative": "She will not have been practicing the piano for years by the time of her next concert."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they already signed the contract before the meeting started?",
+            "affirmative": "They had already signed the contract before the meeting started.",
+            "negative": "They had not signed the contract before the meeting started."
+        },
+        "present": {
+            "question": "Have they signed the contract yet?",
+            "affirmative": "They have signed the contract.",
+            "negative": "They have not signed the contract yet."
+        },
+        "future": {
+            "question": "Will they have signed the contract by the end of the day?",
+            "affirmative": "They will have signed the contract by the end of the day.",
+            "negative": "They will not have signed the contract by the end of the day."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he been living in that city for a decade before he moved?",
+            "affirmative": "He had been living in that city for a decade before he moved.",
+            "negative": "He had not been living in that city for a decade before he moved."
+        },
+        "present": {
+            "question": "Has he been living in that city for a decade?",
+            "affirmative": "He has been living in that city for a decade.",
+            "negative": "He has not been living in that city for a decade."
+        },
+        "future": {
+            "question": "Will he have been living in that city for a decade by next year?",
+            "affirmative": "He will have been living in that city for a decade by next year.",
+            "negative": "He will not have been living in that city for a decade by next year."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she already completed the course when the results were announced?",
+            "affirmative": "She had already completed the course when the results were announced.",
+            "negative": "She had not completed the course when the results were announced."
+        },
+        "present": {
+            "question": "Has she completed the course yet?",
+            "affirmative": "She has completed the course.",
+            "negative": "She has not completed the course yet."
+        },
+        "future": {
+            "question": "Will she have completed the course by the end of the semester?",
+            "affirmative": "She will have completed the course by the end of the semester.",
+            "negative": "She will not have completed the course by the end of the semester."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been working on the project for weeks before they presented it?",
+            "affirmative": "They had been working on the project for weeks before they presented it.",
+            "negative": "They had not been working on the project for weeks before they presented it."
+        },
+        "present": {
+            "question": "Have they been working on the project for weeks?",
+            "affirmative": "They have been working on the project for weeks.",
+            "negative": "They have not been working on the project for weeks."
+        },
+        "future": {
+            "question": "Will they have been working on the project for weeks by the deadline?",
+            "affirmative": "They will have been working on the project for weeks by the deadline.",
+            "negative": "They will not have been working on the project for weeks by the deadline."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he been saving money for years before he bought the car?",
+            "affirmative": "He had been saving money for years before he bought the car.",
+            "negative": "He had not been saving money for years before he bought the car."
+        },
+        "present": {
+            "question": "Has he been saving money for years?",
+            "affirmative": "He has been saving money for years.",
+            "negative": "He has not been saving money for years."
+        },
+        "future": {
+            "question": "Will he have been saving money for years by the time he buys the car?",
+            "affirmative": "He will have been saving money for years by the time he buys the car.",
+            "negative": "He will not have been saving money for years by the time he buys the car."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she already made the decision when they asked her?",
+            "affirmative": "She had already made the decision when they asked her.",
+            "negative": "She had not made the decision when they asked her."
+        },
+        "present": {
+            "question": "Has she made the decision yet?",
+            "affirmative": "She has made the decision.",
+            "negative": "She has not made the decision yet."
+        },
+        "future": {
+            "question": "Will she have made the decision by tomorrow?",
+            "affirmative": "She will have made the decision by tomorrow.",
+            "negative": "She will not have made the decision by tomorrow."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been hiking for hours before they reached the summit?",
+            "affirmative": "They had been hiking for hours before they reached the summit.",
+            "negative": "They had not been hiking for hours before they reached the summit."
+        },
+        "present": {
+            "question": "Have they been hiking for hours?",
+            "affirmative": "They have been hiking for hours.",
+            "negative": "They have not been hiking for hours."
+        },
+        "future": {
+            "question": "Will they have been hiking for hours by the time they reach the summit?",
+            "affirmative": "They will have been hiking for hours by the time they reach the summit.",
+            "negative": "They will not have been hiking for hours by the time they reach the summit."
+        }
+    },
+    {
+        "past": {
+            "question": "Had he been training for the marathon for months before he injured himself?",
+            "affirmative": "He had been training for the marathon for months before he injured himself.",
+            "negative": "He had not been training for the marathon for months before he injured himself."
+        },
+        "present": {
+            "question": "Has he been training for the marathon for months?",
+            "affirmative": "He has been training for the marathon for months.",
+            "negative": "He has not been training for the marathon for months."
+        },
+        "future": {
+            "question": "Will he have been training for the marathon for months by the race day?",
+            "affirmative": "He will have been training for the marathon for months by the race day.",
+            "negative": "He will not have been training for the marathon for months by the race day."
+        }
+    },
+    {
+        "past": {
+            "question": "Had she already booked the tickets when the prices increased?",
+            "affirmative": "She had already booked the tickets when the prices increased.",
+            "negative": "She had not booked the tickets when the prices increased."
+        },
+        "present": {
+            "question": "Has she booked the tickets yet?",
+            "affirmative": "She has booked the tickets.",
+            "negative": "She has not booked the tickets yet."
+        },
+        "future": {
+            "question": "Will she have booked the tickets by the end of the day?",
+            "affirmative": "She will have booked the tickets by the end of the day.",
+            "negative": "She will not have booked the tickets by the end of the day."
+        }
+    },
+    {
+        "past": {
+            "question": "Had they been negotiating the deal for weeks before they reached an agreement?",
+            "affirmative": "They had been negotiating the deal for weeks before they reached an agreement.",
+            "negative": "They had not been negotiating the deal for weeks before they reached an agreement."
+        },
+        "present": {
+            "question": "Have they been negotiating the deal for weeks?",
+            "affirmative": "They have been negotiating the deal for weeks.",
+            "negative": "They have not been negotiating the deal for weeks."
+        },
+        "future": {
+            "question": "Will they have been negotiating the deal for weeks by the time they sign the contract?",
+            "affirmative": "They will have been negotiating the deal for weeks by the time they sign the contract.",
+            "negative": "They will not have been negotiating the deal for weeks by the time they sign the contract."
+        }
+    }
+]

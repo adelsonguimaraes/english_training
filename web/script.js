@@ -1,7 +1,23 @@
 let correctPhrase = ""; // Para armazenar a frase correta
+let currentLevel = 1; // Nível padrão (Beginner)
 
-// Função para carregar o banco de dados
-async function carregarBancoDeDados(caminho) {
+// Função para carregar o banco de dados com base no nível
+async function carregarBancoDeDados(level) {
+    let caminho;
+    switch (level) {
+        case 1:
+            caminho = "../db/beginner.json";
+            break;
+        case 2:
+            caminho = "../db/intermediate.json";
+            break;
+        case 3:
+            caminho = "../db/advanced.json";
+            break;
+        default:
+            throw new Error("Nível inválido");
+    }
+
     try {
         const response = await fetch(caminho);
         if (!response.ok) {
@@ -15,7 +31,7 @@ async function carregarBancoDeDados(caminho) {
     }
 }
 
-// Função para sortear uma frase
+// Função para sortear uma frase com base no nível
 function sortearFrases(db) {
     const tempos = ["past", "present", "future"];
     const tipos = ["question", "affirmative", "negative"];
@@ -47,7 +63,7 @@ function sortearFrases(db) {
 function resetarCampo() {
     document.getElementById("user-input").value = ""; // Limpa o campo
     document.getElementById("user-input").readOnly = false; // Libera o campo para edição
-    document.getElementById("submit-btn").textContent = "Enviar Resposta"; // Volta o texto do botão
+    document.getElementById("submit-btn").textContent = "Submit Answer"; // Volta o texto do botão
     document.getElementById("result").textContent = ""; // Limpa a mensagem de resultado
     document.getElementById("user-input").style.backgroundColor = "white";
 
@@ -58,11 +74,11 @@ function resetarCampo() {
 
 // Função principal para iniciar o sistema
 async function iniciarSistema() {
-    const database = await carregarBancoDeDados("../db.json"); // Caminho do JSON
+    const database = await carregarBancoDeDados(currentLevel); // Carrega o banco de dados do nível selecionado
     if (database.length > 0) {
         sortearFrases(database);
     } else {
-        document.getElementById("shown-phrase").textContent = "Erro ao carregar o banco de dados.";
+        document.getElementById("shown-phrase").textContent = "Error loading database.";
     }
 }
 
@@ -72,10 +88,10 @@ function handleSubmit() {
     const resultDiv = document.getElementById("result");
 
     if (userInput === correctPhrase) {
-        resultDiv.textContent = "Parabéns! Você acertou!";
+        resultDiv.textContent = "Congratulations! You got it right!";
         resultDiv.style.color = "green";
     } else {
-        resultDiv.textContent = `Resposta incorreta. A frase correta era: "${correctPhrase}"`;
+        resultDiv.textContent = `Incorrect. The correct phrase was: "${correctPhrase}"`;
         resultDiv.style.color = "red";
     }
 
@@ -83,17 +99,24 @@ function handleSubmit() {
     document.getElementById("user-input").readOnly = true;
     document.getElementById("user-input").style.backgroundColor = "gray";
 
-    // Altera o texto do botão para "Nova Frase"
-    document.getElementById("submit-btn").textContent = "Nova Frase";
+    // Altera o texto do botão para "New Phrase"
+    document.getElementById("submit-btn").textContent = "New Phrase";
 
     // Remove o evento de envio e adiciona o evento de reset
     submitBtn.removeEventListener("click", handleSubmit);
     submitBtn.addEventListener("click", resetarCampo);
 }
 
-// Adiciona o evento de clique ao botão
+// Adiciona o evento de clique aos botões de nível
+document.querySelectorAll(".level-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        currentLevel = parseInt(button.getAttribute("data-level")); // Define o nível selecionado
+        document.getElementById("menu").style.display = "none"; // Oculta o menu
+        document.getElementById("game").style.display = "block"; // Exibe o jogo
+        iniciarSistema(); // Inicia o jogo com o nível selecionado
+    });
+});
+
+// Adiciona o evento de clique ao botão de enviar
 const submitBtn = document.getElementById("submit-btn");
 submitBtn.addEventListener("click", handleSubmit);
-
-// Inicia o sistema ao carregar a página
-iniciarSistema();
