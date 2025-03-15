@@ -144,7 +144,7 @@ function handleSubmit() {
     const userInputSemPonto = removerPontoFinal(userInput);
     const correctPhraseSemPonto = removerPontoFinal(correctPhrase);
 
-    if (userInputSemPonto === correctPhraseSemPonto) {
+    if (userInputSemPonto.toLowerCase() === correctPhraseSemPonto.toLowerCase()) {
         resultDiv.textContent = "Congratulations! You got it right!";
         resultDiv.style.color = "green";
         salvarResultado(correctPhrase, true, currentLevel); // Salva o acerto
