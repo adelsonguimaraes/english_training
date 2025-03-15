@@ -1,6 +1,54 @@
 let correctPhrase = ""; // Para armazenar a frase correta
 let currentLevel = 1; // Nível padrão (Beginner)
 
+// Função para gerar um hash simples baseado na frase
+function gerarHash(frase) {
+    let hash = 0;
+    for (let i = 0; i < frase.length; i++) {
+        hash = (hash << 5) - hash + frase.charCodeAt(i);
+        hash |= 0; // Converte para um inteiro de 32 bits
+    }
+    return hash.toString();
+}
+
+// Função para salvar o resultado (acerto ou erro) no localStorage
+function salvarResultado(frase, acertou, nivel) {
+    const hash = gerarHash(frase);
+    const dados = { hash, acerto: acertou, nivel };
+    localStorage.setItem(hash, JSON.stringify(dados));
+}
+
+// Função para calcular a porcentagem de domínio de um nível
+function calcularPorcentagemNivel(level) {
+    const totalVariacoes = 20 * 9; // 20 objetos × 9 variações
+    let totalAcertos = 0;
+
+    // Percorre todos os itens no localStorage
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const dados = JSON.parse(localStorage.getItem(key));
+
+        // Verifica se o item pertence ao nível atual e se foi acertado
+        if (dados.nivel === level && dados.acerto) {
+            totalAcertos += 1;
+        }
+    }
+
+    return Math.round((totalAcertos / totalVariacoes) * 100);
+}
+
+// Função para atualizar o círculo de progresso com base no nível
+function atualizarProgresso() {
+    document.querySelectorAll(".progress-circle").forEach((circle, index) => {
+        const nivel = index + 1; // 1: Beginner, 2: Intermediate, 3: Advanced
+        const progress = calcularPorcentagemNivel(nivel);
+        circle.setAttribute("data-progress", progress);
+        circle.querySelector(".progress-value").textContent = `${progress}%`;
+        const gradient = `conic-gradient(#4caf50 ${progress}%, #333333 ${progress}% 100%)`;
+        circle.style.background = gradient;
+    });
+}
+
 // Função para carregar o banco de dados com base no nível
 async function carregarBancoDeDados(level) {
     let caminho;
@@ -82,17 +130,28 @@ async function iniciarSistema() {
     }
 }
 
+// Função para remover o ponto final de uma frase
+function removerPontoFinal(frase) {
+    return frase.replace(/\.$/, ""); // Remove o ponto final, se existir
+}
+
 // Função para lidar com o envio da resposta
 function handleSubmit() {
     const userInput = document.getElementById("user-input").value.trim();
     const resultDiv = document.getElementById("result");
 
-    if (userInput === correctPhrase) {
+    // Remove o ponto final da entrada do usuário e da frase correta
+    const userInputSemPonto = removerPontoFinal(userInput);
+    const correctPhraseSemPonto = removerPontoFinal(correctPhrase);
+
+    if (userInputSemPonto === correctPhraseSemPonto) {
         resultDiv.textContent = "Congratulations! You got it right!";
         resultDiv.style.color = "green";
+        salvarResultado(correctPhrase, true, currentLevel); // Salva o acerto
     } else {
         resultDiv.textContent = `Incorrect. The correct phrase was: "${correctPhrase}"`;
         resultDiv.style.color = "red";
+        salvarResultado(correctPhrase, false, currentLevel); // Salva o erro
     }
 
     // Bloqueia o campo de texto para leitura
@@ -105,6 +164,9 @@ function handleSubmit() {
     // Remove o evento de envio e adiciona o evento de reset
     submitBtn.removeEventListener("click", handleSubmit);
     submitBtn.addEventListener("click", resetarCampo);
+
+    // Atualiza o progresso após salvar o resultado
+    atualizarProgresso();
 }
 
 // Adiciona o evento de clique aos botões de nível
@@ -120,3 +182,6 @@ document.querySelectorAll(".level-btn").forEach(button => {
 // Adiciona o evento de clique ao botão de enviar
 const submitBtn = document.getElementById("submit-btn");
 submitBtn.addEventListener("click", handleSubmit);
+
+// Atualiza o progresso ao carregar a página
+window.addEventListener("load", atualizarProgresso);
